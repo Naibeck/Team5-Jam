@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float gravityForce;
     public float maxDistanceToGround;
     Rigidbody rigidbody;
+
    
     
     void Start()
