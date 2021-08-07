@@ -58,3 +58,9 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+
+BodaGame/Packages/manifest.json
+
+BodaGame/Packages/packages-lock.json
+
+BodaGame/ProjectSettings/ProjectVersion.txt
