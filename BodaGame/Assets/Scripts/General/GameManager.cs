@@ -8,11 +8,13 @@ public class GameManager : MonoBehaviour
     public WinPopup winPopup;
     public LevelCreator levelCreator;
     public LevelMove levelMove;
+    public Timer timer;
 
-    public float difficultySpeed; 
     private void Awake()
     {
         levelCreator.CreateLevel(ref levelMove);
+        timer.losePopup = losePopup;
+        timer.timeRemaining = (PlayerPrefs.GetFloat("DifficultyTimer", 45));
     }
 
     private void Start()

@@ -156,7 +156,7 @@ MonoBehaviour:
   winPopup: {fileID: 1469167728}
   levelCreator: {fileID: 1693392403}
   levelMove: {fileID: 910575359}
-  difficultySpeed: 0
+  timer: {fileID: 5662475143403516140}
 --- !u!4 &623909951
 Transform:
   m_ObjectHideFlags: 0
@@ -652,6 +652,7 @@ MonoBehaviour:
   finalModule: {fileID: 2936080813211083540, guid: 8b6f70bb7968f464bb43ca00599a23c1, type: 3}
   maxModules: 2
   currentEnd: {fileID: 0}
+  levelMove: {fileID: 0}
 --- !u!4 &1693392404
 Transform:
   m_ObjectHideFlags: 0
@@ -852,7 +853,7 @@ PrefabInstance:
       objectReference: {fileID: 3678692429690803826}
     - target: {fileID: 5662475144035270922, guid: 7837a1c7527eb491e934eb304c57141f, type: 3}
       propertyPath: timeRemaining
-      value: 45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5662475144035270923, guid: 7837a1c7527eb491e934eb304c57141f, type: 3}
       propertyPath: m_Pivot.x
@@ -944,3 +945,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7837a1c7527eb491e934eb304c57141f, type: 3}
+--- !u!114 &5662475143403516140 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5662475144035270922, guid: 7837a1c7527eb491e934eb304c57141f, type: 3}
+  m_PrefabInstance: {fileID: 5662475143403516139}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb19b0e0452af4298b8bf2617c2550d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
