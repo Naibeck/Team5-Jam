@@ -5,13 +5,12 @@ using UnityEngine;
 public class LevelEnd : MonoBehaviour
 {
     public bool End;
-    private void Start()
-    {
-        End = false;
-    }
+    public LayerMask playerLayer;
+    private void Start() => End = false;
+    
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Player")
+        if(playerLayer == (playerLayer | (1 << other.gameObject.layer)))
         {
             End = true;
         }

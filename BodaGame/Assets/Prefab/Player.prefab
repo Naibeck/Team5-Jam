@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1737943308770384206}
   - component: {fileID: 1737943308770384211}
   - component: {fileID: 1737943308770384210}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f643e910e7c8487fb42dee619cb288c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 4
+  jumpForce: 6
   gravityForce: 0.5
   maxDistanceToGround: 1
 --- !u!54 &1737943308770384210

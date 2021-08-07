@@ -110,6 +110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   End: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1001 &2930105231656603425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -121,6 +124,10 @@ PrefabInstance:
       propertyPath: levelEnd
       value: 
       objectReference: {fileID: 3957074783007055777}
+    - target: {fileID: 4425002250024953609, guid: 2966c178386a70741a4911b46157b445, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5356848469641924540, guid: 2966c178386a70741a4911b46157b445, type: 3}
       propertyPath: m_Name
       value: FinalModule
