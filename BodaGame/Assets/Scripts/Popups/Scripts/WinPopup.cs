@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class WinPopup : MonoBehaviour
 {
-
     public Button continueButton;
+    public Button exitButton;
     public GameObject popup;
 
     private void Start()
