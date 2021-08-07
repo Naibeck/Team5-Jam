@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         if (isGrounded())
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0))
                 rigidbody.AddForce(new Vector3(0, jumpForce), ForceMode.Impulse);
     }
     void Crouch()
