@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8ac1474-a38f-4e44-8766-8baa987a7034" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BodaGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BodaGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Popups/Scripts/LosePopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Popups/Scripts/LosePopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timer/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Timer/Timer.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,33 +29,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Popups/Scripts/LosePopup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="120">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
-                <marker date="1628343471136" expanded="false" signature="6:100" ph="..." />
-                <marker date="1628343471136" expanded="true" signature="140:355" ph="{...}" />
+                <marker date="1628344667140" expanded="false" signature="6:126" ph="..." />
+                <marker date="1628344667140" expanded="true" signature="166:699" ph="{...}" />
+                <marker date="1628344667140" expanded="true" signature="403:522" ph="{...}" />
+                <marker date="1628344667140" expanded="true" signature="454:514" ph="{...}" />
+                <marker date="1628344667140" expanded="true" signature="549:697" ph="{...}" />
+                <marker date="1628344667140" expanded="true" signature="604:671" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Timer/Timer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+            <state relative-caret-position="75">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding>
-                <marker date="1628342294723" expanded="false" signature="6:91" ph="..." />
-                <marker date="1628342294723" expanded="true" signature="127:1007" ph="{...}" />
-                <marker date="1628342294723" expanded="true" signature="260:304" ph="{...}" />
-                <marker date="1628342294723" expanded="true" signature="328:763" ph="{...}" />
-                <marker date="1628342294723" expanded="true" signature="363:757" ph="{...}" />
-                <marker date="1628342294723" expanded="true" signature="421:498" ph="{...}" />
-                <marker date="1628342294723" expanded="true" signature="515:703" ph="{...}" />
-                <marker date="1628342294723" expanded="true" signature="814:1005" ph="{...}" />
+                <marker date="1628344829674" expanded="false" signature="6:91" ph="..." />
+                <marker date="1628344829674" expanded="true" signature="127:1111" ph="{...}" />
+                <marker date="1628344829674" expanded="true" signature="292:336" ph="{...}" />
+                <marker date="1628344829674" expanded="true" signature="360:867" ph="{...}" />
+                <marker date="1628344829674" expanded="true" signature="395:861" ph="{...}" />
+                <marker date="1628344829674" expanded="true" signature="453:530" ph="{...}" />
+                <marker date="1628344829674" expanded="true" signature="547:769" ph="{...}" />
+                <marker date="1628344829674" expanded="true" signature="918:1109" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -84,9 +89,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Parallax/Parallax.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Timer/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Popups/Scripts/LosePopup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Timer/Timer.cs" />
       </list>
     </option>
   </component>
@@ -247,23 +252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Timer/Timer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
-          <folding>
-            <marker date="1628342294723" expanded="false" signature="6:91" ph="..." />
-            <marker date="1628342294723" expanded="true" signature="127:1007" ph="{...}" />
-            <marker date="1628342294723" expanded="true" signature="260:304" ph="{...}" />
-            <marker date="1628342294723" expanded="true" signature="328:763" ph="{...}" />
-            <marker date="1628342294723" expanded="true" signature="363:757" ph="{...}" />
-            <marker date="1628342294723" expanded="true" signature="421:498" ph="{...}" />
-            <marker date="1628342294723" expanded="true" signature="515:703" ph="{...}" />
-            <marker date="1628342294723" expanded="true" signature="814:1005" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/LosePopUp.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -286,11 +274,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Popups/Scripts/LosePopup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="120">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <marker date="1628343471136" expanded="false" signature="6:100" ph="..." />
-            <marker date="1628343471136" expanded="true" signature="140:355" ph="{...}" />
+            <marker date="1628344667140" expanded="false" signature="6:126" ph="..." />
+            <marker date="1628344667140" expanded="true" signature="166:699" ph="{...}" />
+            <marker date="1628344667140" expanded="true" signature="403:522" ph="{...}" />
+            <marker date="1628344667140" expanded="true" signature="454:514" ph="{...}" />
+            <marker date="1628344667140" expanded="true" signature="549:697" ph="{...}" />
+            <marker date="1628344667140" expanded="true" signature="604:671" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Timer/Timer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <marker date="1628344829674" expanded="false" signature="6:91" ph="..." />
+            <marker date="1628344829674" expanded="true" signature="127:1111" ph="{...}" />
+            <marker date="1628344829674" expanded="true" signature="292:336" ph="{...}" />
+            <marker date="1628344829674" expanded="true" signature="360:867" ph="{...}" />
+            <marker date="1628344829674" expanded="true" signature="395:861" ph="{...}" />
+            <marker date="1628344829674" expanded="true" signature="453:530" ph="{...}" />
+            <marker date="1628344829674" expanded="true" signature="547:769" ph="{...}" />
+            <marker date="1628344829674" expanded="true" signature="918:1109" ph="{...}" />
           </folding>
         </state>
       </provider>
