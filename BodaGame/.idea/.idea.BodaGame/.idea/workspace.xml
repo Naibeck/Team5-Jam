@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8ac1474-a38f-4e44-8766-8baa987a7034" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BodaGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BodaGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/LevelModule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/LevelModule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/LevelCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/General/LevelCreator.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,16 +15,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
-                <marker date="1628346503764" expanded="true" signature="6:138" ph="..." />
-                <marker date="1628346503764" expanded="true" signature="186:812" ph="{...}" />
-                <marker date="1628346503764" expanded="true" signature="338:397" ph="{...}" />
-                <marker date="1628346503764" expanded="true" signature="416:569" ph="{...}" />
+                <marker date="1628349731111" expanded="true" signature="6:138" ph="..." />
+                <marker date="1628349731111" expanded="true" signature="186:686" ph="{...}" />
+                <marker date="1628349731111" expanded="true" signature="338:397" ph="{...}" />
+                <marker date="1628349731111" expanded="true" signature="416:582" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -64,19 +66,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/LevelCreator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="570">
+              <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
               <folding>
-                <marker date="1628349073882" expanded="false" signature="6:78" ph="..." />
-                <marker date="1628349073882" expanded="true" signature="121:1291" ph="{...}" />
-                <marker date="1628349073882" expanded="true" signature="316:351" ph="{...}" />
-                <marker date="1628349073882" expanded="true" signature="383:769" ph="{...}" />
-                <marker date="1628349073882" expanded="true" signature="434:763" ph="{...}" />
-                <marker date="1628349073882" expanded="true" signature="824:1289" ph="{...}" />
-                <marker date="1628349073882" expanded="true" signature="984:1106" ph="{...}" />
+                <marker date="1628349728453" expanded="false" signature="6:78" ph="..." />
+                <marker date="1628349728453" expanded="true" signature="121:1291" ph="{...}" />
+                <marker date="1628349728453" expanded="true" signature="316:351" ph="{...}" />
+                <marker date="1628349728453" expanded="true" signature="383:769" ph="{...}" />
+                <marker date="1628349728453" expanded="true" signature="434:763" ph="{...}" />
+                <marker date="1628349728453" expanded="true" signature="824:1289" ph="{...}" />
+                <marker date="1628349728453" expanded="true" signature="984:1106" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/LevelMove.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <folding>
+                <marker date="1628348877097" expanded="false" signature="6:78" ph="..." />
+                <marker date="1628348877097" expanded="true" signature="118:526" ph="{...}" />
+                <marker date="1628348877097" expanded="true" signature="254:310" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -101,6 +117,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/LevelCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B098E64C-0675-4EB2-AE33-356775947A59/51/065ae4e7/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Popups/Scripts/LosePopup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/General/LevelMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -272,19 +289,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/LosePopUp.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <marker date="1628346503764" expanded="true" signature="6:138" ph="..." />
-            <marker date="1628346503764" expanded="true" signature="186:812" ph="{...}" />
-            <marker date="1628346503764" expanded="true" signature="338:397" ph="{...}" />
-            <marker date="1628346503764" expanded="true" signature="416:569" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Popups/Scripts/LosePopup.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -313,6 +317,47 @@
             <marker date="1628346503765" expanded="true" signature="453:530" ph="{...}" />
             <marker date="1628346503765" expanded="true" signature="547:769" ph="{...}" />
             <marker date="1628346503765" expanded="true" signature="918:1109" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/LevelMove.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <marker date="1628348877097" expanded="false" signature="6:78" ph="..." />
+            <marker date="1628348877097" expanded="true" signature="118:526" ph="{...}" />
+            <marker date="1628348877097" expanded="true" signature="254:310" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/General/LevelCreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+          <folding>
+            <marker date="1628349728453" expanded="false" signature="6:78" ph="..." />
+            <marker date="1628349728453" expanded="true" signature="121:1291" ph="{...}" />
+            <marker date="1628349728453" expanded="true" signature="316:351" ph="{...}" />
+            <marker date="1628349728453" expanded="true" signature="383:769" ph="{...}" />
+            <marker date="1628349728453" expanded="true" signature="434:763" ph="{...}" />
+            <marker date="1628349728453" expanded="true" signature="824:1289" ph="{...}" />
+            <marker date="1628349728453" expanded="true" signature="984:1106" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <marker date="1628349731111" expanded="true" signature="6:138" ph="..." />
+            <marker date="1628349731111" expanded="true" signature="186:686" ph="{...}" />
+            <marker date="1628349731111" expanded="true" signature="338:397" ph="{...}" />
+            <marker date="1628349731111" expanded="true" signature="416:582" ph="{...}" />
           </folding>
         </state>
       </provider>
