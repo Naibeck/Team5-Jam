@@ -22,10 +22,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     { 
         if (isGrounded())
-            if (isJumpingKey())
+            if (Input.GetButtonDown("Jump"))
                 rigidbody.AddForce(new Vector3(0, jumpForce), ForceMode.Impulse);
     }
-    bool isGrounded() => Physics.Raycast(transform.position, transform.up *-1, maxDistanceToGround);
-    private static bool isJumpingKey() => 
-        Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
+    bool isGrounded() => Physics.Raycast(transform.position, transform.up * -1, maxDistanceToGround);
 }
