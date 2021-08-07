@@ -21,9 +21,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         var moveDirection = new Vector3(0f, 0f, Input.GetAxis("Vertical"));
-        
-        if (isJumpingKey()) 
-            moveDirection.y = jumpForce;
+
+        if (controller.isGrounded)
+            if (isJumpingKey()) 
+                moveDirection.y = jumpForce;
 
         moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityForce);
         controller.Move(moveDirection * Time.deltaTime);
