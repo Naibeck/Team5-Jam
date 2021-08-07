@@ -5,6 +5,10 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="General" t="Include">
+            <e p="LevelCreator.cs" t="Include" />
+            <e p="LevelModule.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="PlayerController.cs" t="Include" />
           </e>
