@@ -8,9 +8,8 @@ public class PlayerController : MonoBehaviour
 {
 
     public float jumpForce;
-    public float gravityForce;
     public float maxDistanceToGround;
-    Rigidbody rigidbody;
+    public Rigidbody rigidbody;
    
     
     void Start()
