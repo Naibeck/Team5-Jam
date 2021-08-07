@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8ac1474-a38f-4e44-8766-8baa987a7034" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BodaGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BodaGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,13 +18,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="480">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
-                <marker date="1628318247719" expanded="false" signature="6:78" ph="..." />
-                <marker date="1628318247719" expanded="true" signature="125:607" ph="{...}" />
-                <marker date="1628318247719" expanded="true" signature="207:263" ph="{...}" />
-                <marker date="1628318247719" expanded="true" signature="282:343" ph="{...}" />
+                <marker date="1628323522764" expanded="false" signature="6:101" ph="..." />
+                <marker date="1628323522764" expanded="true" signature="185:859" ph="{...}" />
+                <marker date="1628323522764" expanded="true" signature="321:391" ph="{...}" />
+                <marker date="1628323522764" expanded="true" signature="410:715" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -168,13 +170,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Parallax/Parallax.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Parallax/Parallax.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B098E64C-0675-4EB2-AE33-356775947A59/51/065ae4e7/Input.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -184,13 +180,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="480">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <marker date="1628318247719" expanded="false" signature="6:78" ph="..." />
-            <marker date="1628318247719" expanded="true" signature="125:607" ph="{...}" />
-            <marker date="1628318247719" expanded="true" signature="207:263" ph="{...}" />
-            <marker date="1628318247719" expanded="true" signature="282:343" ph="{...}" />
+            <marker date="1628323522764" expanded="false" signature="6:101" ph="..." />
+            <marker date="1628323522764" expanded="true" signature="185:859" ph="{...}" />
+            <marker date="1628323522764" expanded="true" signature="321:391" ph="{...}" />
+            <marker date="1628323522764" expanded="true" signature="410:715" ph="{...}" />
           </folding>
         </state>
       </provider>

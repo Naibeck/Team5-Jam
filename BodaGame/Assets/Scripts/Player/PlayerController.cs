@@ -1,27 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 public class PlayerController : MonoBehaviour
 {
 
     public float jumpForce;
-    public Rigidbody player;
+    public float gravityForce;
+    public CharacterController controller;
+   
+    
     
     void Start()
     {
-        player = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
     }
 
     void Update()
     {
+        var moveDirection = new Vector3(0f, 0f, Input.GetAxis("Vertical"));
+        
         if (isJumpingKey()) 
-            Jump();
+            moveDirection.y = jumpForce;
+
+        moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityForce);
+        controller.Move(moveDirection * Time.deltaTime);
     }
 
-
-    private Vector3 Jump() => 
-        player.velocity = new Vector3(player.velocity.x, jumpForce, player.velocity.z);
 
     private static bool isJumpingKey() => 
         Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
