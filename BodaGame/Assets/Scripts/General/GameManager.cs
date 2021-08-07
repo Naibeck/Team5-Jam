@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public Timer timer;
     public AudioSource music;
     public AudioSource fastPaceMusic;
+    public AudioSource loseMusic;
+    public AudioSource winMusic;
 
     private bool isRegularMusicPlaying = true;
 
@@ -27,6 +29,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        StartTime();
         fastPaceMusic.volume = 0;
         levelMove.moveSpeed = PlayerPrefs.GetFloat("DifficultySpeed", 5);
         timer.timeRemaining = (PlayerPrefs.GetFloat("DifficultyTimer", 45));
@@ -35,9 +38,39 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         if (levelMove.levelEnd.End)
-            winPopup.Show();
-    }
+        {
+            if (Time.timeScale != 0)
+            {
+                winPopup.Show();
 
+                if (isRegularMusicPlaying)
+                    music.Stop();
+                else fastPaceMusic.Stop();
+
+                if (!winMusic.isPlaying) winMusic.Play();
+
+                StopTime();
+            }
+        }
+        else if (timer.timeRemaining <= 0)
+        {
+            if(Time.timeScale != 0)
+            {
+                Debug.Log("Hello");
+                losePopup.Show();
+                if (isRegularMusicPlaying)
+                    music.Stop();
+                else fastPaceMusic.Stop();
+
+                if (!loseMusic.isPlaying) loseMusic.Play();
+
+                StopTime();
+
+            }
+        }
+    }
+    private void StopTime() => Time.timeScale = 0;
+    private void StartTime() => Time.timeScale = 1;
     private void FixedUpdate()
     {
         if (timer.IsRunningOutOfTime && isRegularMusicPlaying)
@@ -50,11 +83,8 @@ public class GameManager : MonoBehaviour
             }        
             else
                 TriggerFastPacedMusic();
-
         }
     }
-
-
     private void TriggerFastPacedMusic()
     {
         isRegularMusicPlaying = false;
@@ -63,7 +93,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
-
     private void RestartLevel()
     {
         SceneManager.LoadScene(gameObject.scene.name);

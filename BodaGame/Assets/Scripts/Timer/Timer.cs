@@ -33,8 +33,6 @@ public class Timer : MonoBehaviour
                 // trigger lose condition
                 isTimeAvailable = false;
                 timeRemaining = 0f;
-                isTimeAvailable = false;
-                losePopup.Show();
             }
 
             if (timeRemaining >= 0) 
