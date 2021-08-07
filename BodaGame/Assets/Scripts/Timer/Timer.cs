@@ -10,14 +10,15 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI timeText;
     public LosePopup losePopup;
     
-    private bool isTimeAvailable;
+    public bool IsRunningOutOfTime => 
+        timeRemaining < 15f; 
     
-    void Start()
-    {
-        isTimeAvailable = true;
-    }
+    private bool isTimeAvailable;    
 
-    
+    void Start() => 
+        isTimeAvailable = true;
+
+
     void Update()
     {
         if (isTimeAvailable)

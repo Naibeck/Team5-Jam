@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour
     public LevelCreator levelCreator;
     public LevelMove levelMove;
     public Timer timer;
+    public AudioSource music;
+    public AudioSource fastPaceMusic;
+
+    private bool isRegularMusicPlaying = true;
 
     private void Awake()
     {
@@ -19,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        fastPaceMusic.volume = 0;
         levelMove.moveSpeed = PlayerPrefs.GetFloat("DifficultySpeed", 5);
     }
 
@@ -28,5 +33,24 @@ public class GameManager : MonoBehaviour
             winPopup.Show();
     }
 
+    private void FixedUpdate()
+    {
+        if (timer.IsRunningOutOfTime && isRegularMusicPlaying)
+        {
+            var volume = music.volume;
+            if (volume > 0)
+            {
+                music.volume -= 0.05f;
+                fastPaceMusic.volume += 0.02f;    
+            }        
+            else
+                TriggerFastPacedMusic();
 
+        }
+    }
+
+    private void TriggerFastPacedMusic()
+    {
+        isRegularMusicPlaying = false;
+    }
 }

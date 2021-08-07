@@ -147,6 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb19b0e0452af4298b8bf2617c2550d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  timeRemaining: 20
   timeText: {fileID: 5662475144035270921}
   losePopup: {fileID: 0}
