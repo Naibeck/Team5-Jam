@@ -24,20 +24,8 @@ public class LevelCreator : MonoBehaviour
                 SpawnModule(modules[ran]);
             else
                 SpawnModule(modules[ran], currentEnd);
-        for(int i = 0; i < maxModules; i++)
-        {
-            int ran = modules.Count > 0 ? Random.Range(0, modules.Count) : 0;
-            if (i == 0)
-            {
-                SpawnModule(modules[ran]);
-            }
-            else
-            {
-                SpawnModule(modules[ran], currentEnd);
-            }
         }
     }
-
     void SpawnModule(LevelModule o,Transform t = null)
     {
         GameObject newObject;
