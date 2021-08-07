@@ -16,5 +16,6 @@ public class LevelMove : MonoBehaviour
     }
 
     bool CheckEnd() => levelEnd != null ? levelEnd.End : false;
+
     void Move() => level.position = Vector3.MoveTowards(level.position, new Vector3(level.position.x + moveAmount, 0), Time.deltaTime * moveSpeed);
 }

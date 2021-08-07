@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 
     public float timeRemaining;
     public TextMeshProUGUI timeText;
+    public LosePopup losePopup;
     
     private bool isTimeAvailable;
     
@@ -32,8 +33,11 @@ public class Timer : MonoBehaviour
                 isTimeAvailable = false;
                 timeRemaining = 0f;
                 isTimeAvailable = false;
-            }    
-            displayTime(timeRemaining);
+                losePopup.Show();
+            }
+
+            if (timeRemaining >= 0) 
+                displayTime(timeRemaining);
         }
     }
 
