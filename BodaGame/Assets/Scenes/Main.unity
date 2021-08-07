@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a12ef415c1224b345992cb71e0098b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
   moveAmount: 1
   level: {fileID: 1693392404}
   levelEnd: {fileID: 0}
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   modules:
   - {fileID: 6437496702282805, guid: 2966c178386a70741a4911b46157b445, type: 3}
   finalModule: {fileID: 2936080813211083540, guid: 8b6f70bb7968f464bb43ca00599a23c1, type: 3}
-  maxModules: 200
+  maxModules: 6
   currentEnd: {fileID: 0}
   levelMove: {fileID: 0}
 --- !u!4 &1693392404
