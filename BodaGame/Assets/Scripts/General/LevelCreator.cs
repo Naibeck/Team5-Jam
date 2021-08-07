@@ -11,31 +11,30 @@ public class LevelCreator : MonoBehaviour
 
     private void Start()
     {
-        for(int i = 0; i < maxModules; i++)
+        CreateLevel();
+    }
+
+    private void CreateLevel()
+    {
+        for (int i = 0; i < maxModules; i++)
         {
             int ran = modules.Count > 0 ? Random.Range(0, modules.Count) : 0;
+
             if (i == 0)
-            {
                 SpawnModule(modules[ran]);
-            }
             else
-            {
                 SpawnModule(modules[ran], currentEnd);
-            }
         }
     }
 
     void SpawnModule(LevelModule o,Transform t = null)
     {
+        GameObject newObject;
         if(t != null)
-        {
-            var newObject = Instantiate(o.gameObject, t.position, o.transform.rotation);
-            currentEnd = newObject.GetComponent<LevelModule>().end;
-        }
+            newObject = Instantiate(o.gameObject, t.position, o.transform.rotation, t);
         else
-        {
-            var newObject = Instantiate(o.gameObject);
-            currentEnd = newObject.GetComponent<LevelModule>().end;
-        }
+            newObject = Instantiate(o.gameObject);
+
+        currentEnd = newObject.GetComponent<LevelModule>().end;
     }
 }
