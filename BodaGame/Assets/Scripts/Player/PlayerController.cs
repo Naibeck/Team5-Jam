@@ -25,5 +25,5 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
                 rigidbody.AddForce(new Vector3(0, jumpForce), ForceMode.Impulse);
     }
-    bool isGrounded() => Physics.Raycast(transform.position, transform.up *-1, maxDistanceToGround)
+    bool isGrounded() => Physics.Raycast(transform.position, transform.up * -1, maxDistanceToGround);
 }
