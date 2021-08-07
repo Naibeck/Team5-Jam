@@ -8,6 +8,8 @@ public class LevelCreator : MonoBehaviour
     public LevelModule finalModule;
     public int maxModules;
     public Transform currentEnd;
+    public LevelMove levelMove;
+
 
     public void CreateLevel(ref LevelMove levelMove)
     {
