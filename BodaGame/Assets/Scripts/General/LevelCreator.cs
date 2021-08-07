@@ -30,10 +30,9 @@ public class LevelCreator : MonoBehaviour
                 SpawnModule(modules[ran], currentEnd);
         }
     }
-
     void SpawnModule(LevelModule o,Transform t = null)
     {
-        GameObject newObject;
+        GameObject newObject
         if (t != null)
             newObject = Instantiate(o.gameObject, t.position, o.transform.rotation, t);
         else
