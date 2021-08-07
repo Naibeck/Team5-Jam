@@ -11,6 +11,9 @@
           <e p="Timer" t="Include">
             <e p="Timer.cs" t="Include" />
           </e>
+          <e p="UI" t="Include">
+            <e p="MainMenu.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
