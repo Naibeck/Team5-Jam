@@ -9,28 +9,22 @@ public class PlayerController : MonoBehaviour
 
     public float jumpForce;
     public float gravityForce;
-    public CharacterController controller;
+    public float maxDistanceToGround;
+    Rigidbody rigidbody;
    
-    
     
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     void Update()
-    {
-        var moveDirection = new Vector3(0f, 0f, Input.GetAxis("Vertical"));
-
-        if (controller.isGrounded)
-            if (isJumpingKey()) 
-                moveDirection.y = jumpForce;
-
-        moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityForce);
-        controller.Move(moveDirection * Time.deltaTime);
+    { 
+        if (isGrounded())
+            if (isJumpingKey())
+                rigidbody.AddForce(new Vector3(0, jumpForce), ForceMode.Impulse);
     }
-
-
+    bool isGrounded() => Physics.Raycast(transform.position, transform.up *-1, maxDistanceToGround);
     private static bool isJumpingKey() => 
         Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
 }
