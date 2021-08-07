@@ -8,6 +8,11 @@
           <e p="Player" t="Include">
             <e p="PlayerController.cs" t="Include" />
           </e>
+          <e p="Popups" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="LosePopUp.cs" t="Include" />
+            </e>
+          </e>
           <e p="Timer" t="Include">
             <e p="Timer.cs" t="Include" />
           </e>
