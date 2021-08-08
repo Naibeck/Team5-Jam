@@ -7,12 +7,14 @@ public class Pickup : MonoBehaviour
     Timer timer;
     public float addTime;
     public LayerMask playerLayer;
+    public AudioSource source;
+    public GameObject cake;
     void Start()
     {
 
         if(!(Random.Range(0,PlayerPrefs.GetInt("DifficultyPowerUp", 1)) < 1))
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
         timer = GameObject.FindObjectOfType<Timer>();
     }
@@ -22,7 +24,8 @@ public class Pickup : MonoBehaviour
         if(playerLayer == (playerLayer | (1 << other.gameObject.layer)))
         {
             timer.timeRemaining += addTime;
-            Destroy(gameObject);
+            source.Play();
+            cake.SetActive(false);
         }
 
     }

@@ -653,6 +653,10 @@ PrefabInstance:
       propertyPath: maxDistanceToGround
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6476612280915663826, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13
+      objectReference: {fileID: 0}
     - target: {fileID: 6476612280916010624, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
       propertyPath: m_Name
       value: Model
