@@ -1266,6 +1266,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modules:
   - {fileID: 6437496702282805, guid: 2966c178386a70741a4911b46157b445, type: 3}
+  - {fileID: 8479192703277018828, guid: a4fc6020be8b270459fd32d7a1c6c350, type: 3}
+  - {fileID: 7763747557509794448, guid: fe1e993f7f9916d49b2be88c15b138d0, type: 3}
+  - {fileID: 6039156755254149420, guid: 1aeab85933f88554ea454f77e05f1ed2, type: 3}
+  startModule: {fileID: 2797618240575823605, guid: 66b4b4bc43ee93e469df39ab9cf91297, type: 3}
   finalModule: {fileID: 2936080813211083540, guid: 8b6f70bb7968f464bb43ca00599a23c1, type: 3}
   maxModules: 6
   currentEnd: {fileID: 0}

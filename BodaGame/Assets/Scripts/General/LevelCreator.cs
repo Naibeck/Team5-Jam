@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelCreator : MonoBehaviour
 {
     public List<LevelModule> modules;
+    public LevelModule startModule;
     public LevelModule finalModule;
     public int maxModules;
     public Transform currentEnd;
@@ -18,7 +19,7 @@ public class LevelCreator : MonoBehaviour
             int ran = modules.Count > 0 ? Random.Range(0, modules.Count) : 0;
 
             if (i == 0)
-                SpawnModule(modules[ran], ref levelMove);
+                SpawnModule(startModule, ref levelMove);
             if (i == maxModules - 1)
                 SpawnModule(finalModule,ref levelMove, currentEnd);
             else
