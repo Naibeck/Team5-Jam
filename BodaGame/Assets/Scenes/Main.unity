@@ -186,10 +186,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3720c0223d8aba24085aa33f0b60b447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1635956253}
   losePopup: {fileID: 3678692429690803826}
   winPopup: {fileID: 1469167728}
   levelCreator: {fileID: 1693392403}
-  levelMove: {fileID: 910575359}
   timer: {fileID: 5662475143403516140}
   music: {fileID: 1294631102}
   fastPaceMusic: {fileID: 680908620}
@@ -696,13 +696,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1737943308770384206, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
+      propertyPath: m_Size.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737943308770384210, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
+      propertyPath: m_Mass
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1737943308770384210, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
       propertyPath: m_Interpolate
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1737943308770384210, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
       propertyPath: m_CollisionDetection
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737943308770384211, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
+      propertyPath: jumpForce
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1737943308770384211, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
+      propertyPath: maxDistanceToGround
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476612280915663826, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
@@ -1184,6 +1204,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1635956253 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1737943308770384211, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
+  m_PrefabInstance: {fileID: 1250307028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f643e910e7c8487fb42dee619cb288c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1693392402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,7 +1249,7 @@ MonoBehaviour:
   finalModule: {fileID: 2936080813211083540, guid: 8b6f70bb7968f464bb43ca00599a23c1, type: 3}
   maxModules: 200
   currentEnd: {fileID: 0}
-  levelMove: {fileID: 0}
+  levelEnd: {fileID: 0}
 --- !u!4 &1693392404
 Transform:
   m_ObjectHideFlags: 0

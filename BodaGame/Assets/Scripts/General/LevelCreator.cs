@@ -8,24 +8,24 @@ public class LevelCreator : MonoBehaviour
     public LevelModule finalModule;
     public int maxModules;
     public Transform currentEnd;
-    public LevelMove levelMove;
+    public LevelEnd levelEnd;
+    public bool CheckEnd() => levelEnd != null ? levelEnd.End : false;
 
-
-    public void CreateLevel(ref LevelMove levelMove)
+    public void CreateLevel()
     {
         for (int i = 0; i < maxModules; i++)
         {
             int ran = modules.Count > 0 ? Random.Range(0, modules.Count) : 0;
 
             if (i == 0)
-                SpawnModule(modules[ran], ref levelMove);
+                SpawnModule(startModule);
             if (i == maxModules - 1)
-                SpawnModule(finalModule,ref levelMove, currentEnd);
+                SpawnModule(finalModule, currentEnd);
             else
-                SpawnModule(modules[ran],ref levelMove, currentEnd);
+                SpawnModule(modules[ran],currentEnd);
         }
     }
-    void SpawnModule(LevelModule o,ref LevelMove levelMove, Transform t = null)
+    void SpawnModule(LevelModule o ,Transform t = null)
     {
         GameObject newObject;
         if (t != null)
@@ -33,11 +33,10 @@ public class LevelCreator : MonoBehaviour
         else
         {
             newObject = Instantiate(o.gameObject);
-            levelMove.level = newObject.transform;
         }
 
-        if (o == finalModule && levelMove != null)
-            levelMove.levelEnd = newObject.GetComponent<LevelModule>().levelEnd;
+        if (o == finalModule)
+            levelEnd = newObject.GetComponent<LevelModule>().levelEnd;
 
         currentEnd = newObject.GetComponent<LevelModule>().end;
     }
