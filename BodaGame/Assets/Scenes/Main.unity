@@ -712,17 +712,6 @@ Transform:
   m_Father: {fileID: 1340121020}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1172573780 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5888443080862866857, guid: 92059846c5f354dbfb1a00c43e47031f, type: 3}
-  m_PrefabInstance: {fileID: 1469167726}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1250307028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1106,32 +1095,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinPopUp
       objectReference: {fileID: 0}
-    - target: {fileID: 3678692430901342799, guid: 92059846c5f354dbfb1a00c43e47031f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92059846c5f354dbfb1a00c43e47031f, type: 3}
---- !u!1 &1469167727 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3678692430901342799, guid: 92059846c5f354dbfb1a00c43e47031f, type: 3}
+--- !u!114 &1469167728 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4835532588158777810, guid: 92059846c5f354dbfb1a00c43e47031f, type: 3}
   m_PrefabInstance: {fileID: 1469167726}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1469167728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469167727}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 695176ca89fcc4738a187aa147c49eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  continueButton: {fileID: 1172573780}
-  exitButton: {fileID: 1630293495}
-  popup: {fileID: 1469167727}
 --- !u!1 &1535302540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,17 +1235,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1630293495 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8404101119949951454, guid: 92059846c5f354dbfb1a00c43e47031f, type: 3}
-  m_PrefabInstance: {fileID: 1469167726}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1693392402
 GameObject:
   m_ObjectHideFlags: 0
