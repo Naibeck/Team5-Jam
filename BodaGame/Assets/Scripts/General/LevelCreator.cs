@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelCreator : MonoBehaviour
 {
     public List<LevelModule> modules;
+    public LevelModule startModule;
     public LevelModule finalModule;
     public int maxModules;
     public Transform currentEnd;

@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
             if (volume > 0)
             {
                 music.volume -= 0.05f;
-                fastPaceMusic.volume += 0.02f;    
+                fastPaceMusic.volume += 0.05f;    
             }        
             else
                 TriggerFastPacedMusic();
