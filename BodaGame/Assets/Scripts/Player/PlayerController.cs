@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public Animator animator;
     public AudioSource jumpAudio;
+    public AudioSource collisionAudio;
     Rigidbody rigidbody;
 
     void Start()
@@ -57,6 +58,16 @@ public class PlayerController : MonoBehaviour
         new Vector3(1, 1, 1), transform.rotation).ToList();
         colliders.Remove(GetComponent<Collider>());
         return colliders.Count > 0;
+    }
+
+    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!collisionAudio.isPlaying)
+        {
+            collisionAudio.pitch = Random.Range(0.8f, 2f);
+            collisionAudio.Play();
+        }
     }
 
 }

@@ -11,7 +11,6 @@ public class Pickup : MonoBehaviour
     public GameObject cake;
     void Start()
     {
-
         if(!(Random.Range(0,PlayerPrefs.GetInt("DifficultyPowerUp", 1)) < 1))
         {
             gameObject.SetActive(false);
@@ -27,6 +26,5 @@ public class Pickup : MonoBehaviour
             source.Play();
             cake.SetActive(false);
         }
-
     }
 }
