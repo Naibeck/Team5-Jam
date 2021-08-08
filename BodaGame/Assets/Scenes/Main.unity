@@ -1218,9 +1218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modules:
-  - {fileID: 3251496603272374579, guid: 246f0ae7345d1394e906707092ec2a2b, type: 3}
   - {fileID: 6437496702282805, guid: 2966c178386a70741a4911b46157b445, type: 3}
   - {fileID: 7763747557509794448, guid: fe1e993f7f9916d49b2be88c15b138d0, type: 3}
+  startModule: {fileID: 3251496603272374579, guid: 246f0ae7345d1394e906707092ec2a2b, type: 3}
   finalModule: {fileID: 2936080813211083540, guid: 8b6f70bb7968f464bb43ca00599a23c1, type: 3}
   maxModules: 6
   currentEnd: {fileID: 0}
