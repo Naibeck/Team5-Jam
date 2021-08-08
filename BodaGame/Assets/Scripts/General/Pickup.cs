@@ -9,7 +9,8 @@ public class Pickup : MonoBehaviour
     public LayerMask playerLayer;
     void Start()
     {
-        if(Random.Range(0,5) > 2)
+
+        if(!(Random.Range(0,PlayerPrefs.GetInt("DifficultyPowerUp", 1)) < 1))
         {
             Destroy(gameObject);
         }

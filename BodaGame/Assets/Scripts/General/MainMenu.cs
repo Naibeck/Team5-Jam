@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
 
     public void SetDifficultyTimer(float difficultyTimer) => 
         PlayerPrefs.SetFloat("DifficultyTimer", difficultyTimer);
+    public void SetDifficultyPowerUp(int difficultyTimer) =>
+        PlayerPrefs.SetInt("DifficultyPowerUp", difficultyTimer);
     public void GoToScene(string scene) => SceneManager.LoadScene(scene);
     public void ExitGame() => Application.Quit();
 

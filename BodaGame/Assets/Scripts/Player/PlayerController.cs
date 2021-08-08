@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
@@ -50,5 +51,12 @@ public class PlayerController : MonoBehaviour
     {
         //if (Input.GetButtonDown("Crouch")) ;
     }
-    bool isGrounded() => Physics.Raycast(transform.position, transform.up * -1, maxDistanceToGround);
+    bool isGrounded()
+    {
+        var colliders = Physics.OverlapBox(transform.position + new Vector3(0, -maxDistanceToGround),
+        new Vector3(1, 1, 1), transform.rotation).ToList();
+        colliders.Remove(GetComponent<Collider>());
+        return colliders.Count > 0;
+    }
+
 }
