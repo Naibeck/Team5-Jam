@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public float gravityForce;
     public float maxDistanceToGround;
+    public float moveSpeed;
     Rigidbody rigidbody;
 
     void Start()
@@ -21,13 +22,18 @@ public class PlayerController : MonoBehaviour
     {
         Jump();
         Crouch();
+        Move();
     }
 
+    void Move()
+    {
+        rigidbody.velocity = new Vector3(moveSpeed, rigidbody.velocity.y);
+    }
     void Jump()
     {
         if (isGrounded())
             if (Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0))
-                rigidbody.AddForce(new Vector3(0, jumpForce), ForceMode.Impulse);
+                rigidbody.velocity = new Vector3(rigidbody.velocity.x, jumpForce);
     }
     void Crouch()
     {

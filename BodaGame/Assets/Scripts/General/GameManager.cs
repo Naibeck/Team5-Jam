@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public PlayerController player;
     public LosePopup losePopup;
     public WinPopup winPopup;
     public LevelCreator levelCreator;
-    public LevelMove levelMove;
     public Timer timer;
     public AudioSource music;
     public AudioSource fastPaceMusic;
@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        levelCreator.CreateLevel(ref levelMove);
+        levelCreator.CreateLevel();
         timer.losePopup = losePopup;
         winPopup.continueButton.onClick.AddListener(() => { RestartLevel();});
         winPopup.exitButton.onClick.AddListener(() => { ReturnToMenu(); });
@@ -31,13 +31,17 @@ public class GameManager : MonoBehaviour
     {
         StartTime();
         fastPaceMusic.volume = 0;
-        levelMove.moveSpeed = PlayerPrefs.GetFloat("DifficultySpeed", 5);
+        player.moveSpeed = PlayerPrefs.GetFloat("DifficultySpeed", 5);
         timer.timeRemaining = (PlayerPrefs.GetFloat("DifficultyTimer", 51));
     }
 
     private void Update()
     {
-        if (levelMove.levelEnd.End)
+        if(levelCreator.CheckEnd())
+        {
+            player.enabled = false;
+        }
+        if (levelCreator.levelEnd.End)
         {
             if (Time.timeScale != 0)
             {
