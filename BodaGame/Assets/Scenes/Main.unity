@@ -611,10 +611,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a12ef415c1224b345992cb71e0098b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
-  moveAmount: 1
-  level: {fileID: 1693392404}
-  levelEnd: {fileID: 0}
 --- !u!4 &910575360
 Transform:
   m_ObjectHideFlags: 0
@@ -1055,11 +1051,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &1340121020 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1737943308770384205, guid: fed49acf393b2ae4aadcf17442a281f7, type: 3}
-  m_PrefabInstance: {fileID: 1250307028}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1469167726
 PrefabInstance:
   m_ObjectHideFlags: 0
