@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     public LosePopup losePopup;
     
     public bool IsRunningOutOfTime => 
-        timeRemaining < 15f; 
+        timeRemaining < 10f; 
     
     private bool isTimeAvailable;    
 

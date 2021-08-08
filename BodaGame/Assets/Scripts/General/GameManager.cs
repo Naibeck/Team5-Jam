@@ -47,9 +47,8 @@ public class GameManager : MonoBehaviour
             {
                 winPopup.Show();
 
-                if (isRegularMusicPlaying)
-                    music.Stop();
-                else fastPaceMusic.Stop();
+                music.Stop();
+                fastPaceMusic.Stop();
 
                 if (!winMusic.isPlaying) winMusic.Play();
 
@@ -62,9 +61,8 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("Hello");
                 losePopup.Show();
-                if (isRegularMusicPlaying)
-                    music.Stop();
-                else fastPaceMusic.Stop();
+                music.Stop();
+                fastPaceMusic.Stop();
 
                 if (!loseMusic.isPlaying) loseMusic.Play();
 
@@ -88,11 +86,19 @@ public class GameManager : MonoBehaviour
             else
                 TriggerFastPacedMusic();
         }
+        else
+        {
+            var volume = fastPaceMusic.volume;
+            if (volume > 0)
+            {
+                music.volume += 0.05f;
+                fastPaceMusic.volume -= 0.05f;
+            }
+            TriggerFastPacedMusic();
+        }
     }
-    private void TriggerFastPacedMusic()
-    {
-        isRegularMusicPlaying = false;
-    }
+    private void TriggerFastPacedMusic() =>isRegularMusicPlaying = !isRegularMusicPlaying;
+    
     private void ReturnToMenu()
     {
         SceneManager.LoadScene("MainMenu");
