@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float gravityForce;
     public float maxDistanceToGround;
     public float moveSpeed;
+    public Animator animator;
+    public AudioSource jumpAudio;
     Rigidbody rigidbody;
 
     void Start()
@@ -25,6 +27,11 @@ public class PlayerController : MonoBehaviour
         Move();
     }
 
+    void Animation()
+    {
+        animator.SetFloat("Speed", rigidbody.velocity.x);
+        animator.SetFloat("JumpSpeed", rigidbody.velocity.y);
+    }
     void Move()
     {
         rigidbody.velocity = new Vector3(moveSpeed, rigidbody.velocity.y);
@@ -33,7 +40,11 @@ public class PlayerController : MonoBehaviour
     {
         if (isGrounded())
             if (Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0))
+            {
                 rigidbody.velocity = new Vector3(rigidbody.velocity.x, jumpForce);
+                jumpAudio.pitch = Random.Range(0.9f, 1.1f);
+                jumpAudio.Play();
+            }
     }
     void Crouch()
     {

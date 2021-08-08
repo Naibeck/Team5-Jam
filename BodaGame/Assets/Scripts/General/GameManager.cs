@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
             if (volume > 0)
             {
                 music.volume -= 0.05f;
-                fastPaceMusic.volume += 0.05f;    
+                fastPaceMusic.volume = fastPaceMusic.volume < 0.75f ? fastPaceMusic.volume + 0.05f  : 0.75f;    
             }        
             else
                 TriggerFastPacedMusic();
@@ -91,11 +91,13 @@ public class GameManager : MonoBehaviour
             var volume = fastPaceMusic.volume;
             if (volume > 0)
             {
-                music.volume += 0.05f;
+                music.volume = music.volume < 0.75f ? music.volume + 0.05f : 0.75f;
+
                 fastPaceMusic.volume -= 0.05f;
             }
             TriggerFastPacedMusic();
         }
+
     }
     private void TriggerFastPacedMusic() =>isRegularMusicPlaying = !isRegularMusicPlaying;
     

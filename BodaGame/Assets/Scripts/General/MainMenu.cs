@@ -1,7 +1,10 @@
 using UnityEngine;
+using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
-public class SceneSelector : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
     public void SetDifficultySpeed(float difficultySpeed) =>
         PlayerPrefs.SetFloat("DifficultySpeed", difficultySpeed);
