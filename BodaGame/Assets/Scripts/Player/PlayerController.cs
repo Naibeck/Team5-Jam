@@ -27,13 +27,10 @@ public class PlayerController : MonoBehaviour
         Jump();
         Crouch();
         Move();
+        Animation();
     }
 
-    void Animation()
-    {
-        animator.SetFloat("Speed", rigidbody.velocity.x);
-        animator.SetFloat("JumpSpeed", rigidbody.velocity.y);
-    }
+    void Animation() => animator.SetBool("IsGrounded", isGrounded());
     void Move()
     {
         rigidbody.velocity = new Vector3(moveSpeed, rigidbody.velocity.y);
@@ -55,7 +52,7 @@ public class PlayerController : MonoBehaviour
     bool isGrounded()
     {
         var colliders = Physics.OverlapBox(transform.position + new Vector3(0, -maxDistanceToGround),
-        new Vector3(1, 1, 1), transform.rotation).ToList();
+        new Vector3(1, 0.5f, 0.5f), transform.rotation).ToList();
         colliders.Remove(GetComponent<Collider>());
         return colliders.Count > 0;
     }

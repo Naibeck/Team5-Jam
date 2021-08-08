@@ -150,7 +150,7 @@ MonoBehaviour:
   gravityForce: 0.5
   maxDistanceToGround: 1
   moveSpeed: 0
-  animator: {fileID: 0}
+  animator: {fileID: 4356700341369222283}
   jumpAudio: {fileID: 1250307032}
   collisionAudio: {fileID: 3040063059079931995}
 --- !u!54 &1737943308770384210
@@ -487,5 +487,10 @@ PrefabInstance:
 --- !u!4 &7680386911900233457 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f81883ffa51a8224fbf45a870559321a, type: 3}
+  m_PrefabInstance: {fileID: 7862315494938904858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4356700341369222283 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: f81883ffa51a8224fbf45a870559321a, type: 3}
   m_PrefabInstance: {fileID: 7862315494938904858}
   m_PrefabAsset: {fileID: 0}
