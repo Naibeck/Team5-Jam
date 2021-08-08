@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:BodaGame/Assets/Materials/text.mat.meta
 guid: ae87caf85c6306943bb773339930b8f2
 NativeFormatImporter:
+=======
+guid: eca036dcb74c24e4687c45ba0c2d2983
+folderAsset: yes
+DefaultImporter:
+>>>>>>> f1f469813da146f95ab70a6943f4056e74172185:BodaGame/Assets/Lean/Common/Documentation.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 

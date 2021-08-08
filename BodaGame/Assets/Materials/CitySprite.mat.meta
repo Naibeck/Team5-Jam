@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:BodaGame/Assets/Materials/CitySprite.mat.meta
 guid: 54a09196fed723b4ca7faa2fcaf6ac8f
 NativeFormatImporter:
+=======
+guid: 2d3f11448825546538fb5ad85ce4e9e4
+folderAsset: yes
+DefaultImporter:
+>>>>>>> f1f469813da146f95ab70a6943f4056e74172185:BodaGame/Assets/Lean.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 
