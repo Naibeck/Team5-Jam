@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
         StartTime();
         fastPaceMusic.volume = 0;
         player.moveSpeed = PlayerPrefs.GetFloat("DifficultySpeed", 5);
-        timer.timeRemaining = (PlayerPrefs.GetFloat("DifficultyTimer", 51));
+        timer.timeRemaining = (PlayerPrefs.GetFloat("DifficultyTimer", 10));
     }
 
     private void Update()
